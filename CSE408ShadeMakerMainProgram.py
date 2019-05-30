@@ -72,7 +72,6 @@ while True:
     while len(message) <= 16:
         message.append(0)
         
-    #start = time.time()
     radio.write(message)
     print("Sent the message: {}".format(message))
     time.sleep(.5)
